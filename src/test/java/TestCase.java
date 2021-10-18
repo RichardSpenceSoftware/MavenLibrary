@@ -6,13 +6,13 @@ class FictionTest {
 
     @org.junit.jupiter.api.Test
     void getDate() {
-        Fiction fiction = new Fiction("Knausguard","2011");
+        Fiction fiction = new Fiction("Knausguard","2012");
         assertEquals("2012",fiction.getDate());
     }
 
     @org.junit.jupiter.api.Test
     void testGetDate() {
         Fiction fiction = new Fiction("Knausguard","2011");
-        assertEquals("This is the Right one","2012",fiction.getDate());
+        assertEquals("This is the Right one","This is the Right one",fiction.getDate());
     }
 }
